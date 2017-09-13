@@ -37,3 +37,10 @@
     font-weight: 600;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('Avenir-Heavy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

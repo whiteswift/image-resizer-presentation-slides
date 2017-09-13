@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Image Manager Showcase</title>
+	<title>polymer summit 2017 🇩🇰</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css">
@@ -16,6 +16,10 @@
 	<style>
 	.emoji {
 		font-size: 7em;
+	}
+	.stretch {
+		width: 80vh;
+		height: 70vh;
 	}
 
 	</style>
@@ -32,67 +36,229 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h2>Image Manager Makeover</h2>
+				<h2>polymer summit 2017 highlights</h2>
+				<h2> 🇩🇰 💰 💂🏻 🚤</h2>
 			</section>
 
 			<section>
-				<h2>What is it?</h2>
+				<img src='assets/venue.jpg'>
+			</section>
+
+			<section>
+				<img src='assets/choo.png'>
+			</section>
+<!-- whats new -->
+			<section>
+				<h2>what's new in polymer?</h2>
+			</section>
+
+			<section>
+				<h2>polymer is now at version <br/>✨ 3.0 (beta) ✨ </h2>
+			</section>
+
+			<section>
+				<h2>polymer is on NPM 💪 <br/>(no more bower)</h2>
+			</section>
+
+			<section>
+				<h2>JavaScript es imports ✅</h2>
+				<br />
+				<h2>HTML imports 💔🗑</h2>
+			</section>
+			<section>
+				<img src="assets/esimport.png">
+			</section>
+			<section>
+				<h2><span class='fragment highlight-red visible' data-fragment-index="1">thanks react</span> 🤙</h2>
+			</section>
+
+			<section>
+				<h2>old v2.0 components?</h2>
+			</section>
+			<section>
+				<h3>polymer modulizer ⚒ <br/>upgrades older components to 3.0</h3>
+			</section>
+			<section>
+				<img src="assets/modulizer.png">
+			</section>
+
+			<section>
+				<h3>official elements have been ported to NPM 😋</h3>
+			</section>
+
+			<section>
+				<img src="assets/whatsnewsummary.png">
+			</section>
+<!-- yarn -->
+			<section>
+				<h2>yarn: flatten depency tree</h2>
+				<h4 class="fragment fade-up">( for front end modules )</h4>
+
+				<div class="fragment fade-up">
+					<br/>
+					<pre><code data-trim data-noescape>
+					// package.json
+					{
+						"flat": true
+					}
+					</code></pre>
+					<br/>
+					<a href='https://yarnpkg.com/lang/en/docs/package-json/'>yarnpkg.com/lang/en/docs/package-json/</a>
+
+					<!-- for testing/build/optimisation modules I think it's better to use npm because they may rely on specific verisons -->
+					<!-- but for front end it's fine beacuse you're not going to need 3 versions of jQuery, for example. -->
+				</div>
+			</section>
+
+			<section>
+				<h3>google updated youtube with polymer components</h3>
+			</section>
+
+			<section>
 				<ul>
-					<li>React application using the Flux framework</li>
-					<li>Manages image setting configurations per brand</li>
-					<ul>
-						<li>Size dimensions</li>
-						<li>Image quality...</li>
-					</ul>
-					<li>Config is used by the Dynamic Image Resizer</li>
-					<li>Deployed in AWS, uses EC2, DynamoDb, S3...</li>
-				</uL>
+					<li>
+						1.5 billion users per month
+					</li><br/>
+					<li>
+						1+ billion hours watched per day <br/>( 114,000 years )
+					</li><br/>
+					<li>
+						< 2s to load a video
+					</li>
+				</ul>
 			</section>
 
 			<section>
-				<img src="assets/ImageManagerArchitecturev2.png"  height="600" width="844">
+				<!-- New design too and performance improvements -->
+				<h3>✨new youtube preview✨</h3>
+				<div class="fragment fade-up">
+					<a>youtube.com/new</a>
+				</div>
+
+				<br/>
+				<!-- The watch next video list and comments section are a deffered lazy loaded -->
+				<h3 class="fragment fade-up">+ performance</h3>
+				<!-- But for more I was more excited about this feature -->
+				<h3 class="fragment fade-up">+ new dark theme 🌚</h3>
+				<!-- which is kindof becoming a standard between sites like twitter -->
 			</section>
 
 			<section>
-				<h2>Image Manager used to look like this</h2>
-				<p style="font-size: 7vw;">🤢</p>
-			</section>
-
-			<section data-background-video="assets/oldImageManager.mov">
-			</section>
-
-			<section>
-				<h2>Image Manager looks haggard.</h2>
-				<img src="assets/haggard.jpeg" style="width: 36%;" />
+				<h2>mobile performance testing</h2>
+				<br/>
+				<h3 class="fragment fade-up">run lighthouse audits<br/>on real mobile devices 📲</h3>
 			</section>
 
 			<section>
-				<h2>But let's be objective about UI changes</h2>
-				<p style="font-size: 7vw;">💡</p>
+				<img src="assets/webtest.jpg">
+				<a href='http://www.webpagetest.org/easy.php'>webpagetest.org/easy.php</a>
+			</section>
+<!-- custom elements -->
+			<section>
+				<!-- Rob Dodson -->
+				<h2>custom elements</h2>
 			</section>
 
 			<section>
-				<img data-src="assets/uirules.png" style="width: 75%;" />
+				<!-- custom elements -->
+				<!-- when do you make a custom element, when do you need shadow dom? -->
+				<h4>does your element need shadown dom?</h4>
+				<ul>
+					<br/>
+					<h4 class="fragment fade-up">✅ for controls and stuff</h4>
+					<h4 class="fragment fade-up">✅ if you want to apply self-applied styles</h4>
+					<h4 class="fragment fade-up">✅ dom encapsulation</h4>
+				</ul>
 			</section>
 
 			<section>
-				<h2>Image Manager had a makeover</h2>
-				<p style="font-size: 7vw;">💅💄🤳</p>
+				<!-- How easy is it to create custom components in each js framework? -->
+				<h2>how easy is it?</h2>
+				<h1 class='emoji'>🤔</h1>
+			</section>
+			
+			<section>
+				<div>
+					<iframe class='stretch' data-src="https://custom-elements-everywhere.com/"></iframe>
+				</div>
 			</section>
 
-			<section data-background-video="assets/newImageManager.mov">
+<!-- other -->
+			<section>
+				<h2>other things:</h2>
 			</section>
 
 			<section>
-				<h2>More Info</h2>
-				<p style="font-size: 7vw;">📄</p>
+				<h2>codelabs</h2>
+				<br/>
+				<ul>
+					<li>build and deploy a polymer 2.0 app</li>
+					<li>prpl with custom elements and firebase</li>
+					<li><span class='fragment highlight-green visible' data-fragment-index="1">performant expand & collapse animations</span></li>
+				</ul>
 			</section>
 
+			<section>
+				<!-- The most interesting codelab was the supercharged session -->
+				<h4>supercharged</h4>
+				<ul>
+					<br/>
+					<li class="fragment fade-up">custom components</li>
+					<li class="fragment fade-up">intersection observer</li><!-- events are dispactched in idle time so it's performant -->
+					<li class="fragment fade-up">image rendering in css</li>
+					<li class="fragment fade-up">✨ lazy loading w/super awesome progressivly rendered base64 images 🎉</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>lastly</h2>
+			</section>
+			<!-- Bluetooth beacons -->
+			<section>
+				<!-- What are bluetooth beacons -->
+				<!-- A way of giving contextual information as passive notification on your phone via bluetooth -->
+				<!-- all the links to these things are a click away on your phone now in stead of using a tiny url or QR code on the screen -->
+				<!-- I'm super keen to get you all set up with bluetooth beacons because it's an awesome technology and it will probably appear in the next hackathon or social event -->
+				<h2>bluetooth beacons!</h2>
+			</section>
+
+			<section>
+				<h2>set your phone up now 🤳</h2>
+			</section>
+
+			<section>
+				<!-- Pull out your phone -->
+				<!-- You'll need -->
+				<ul>
+					<h3>✅ chrome installed</h3>
+					<h3 class="fragment fade-up">✅ data connection</h3>
+					<h3 class="fragment fade-up">✅ bluetooth switched on</h3>
+				</ul>
+			</section>
+
+			<section>
+				<h2>setup on ios</h2>
+			</section>
+			<section data-background-video="assets/ios-physical-web.mov" data-background-video-muted>
+			</section>
+
+			<section>
+				<h2>setup on android</h2>
+			</section>
+			<section data-background-video="assets/android-physical-web.mp4" data-background-video-muted>
+				<!-- <video data-autoplay src="assets/android-physical-web.mp4"></video> -->
+				<!-- data-background-video="assets/android-physical-web.mp4" -->
+			</section>
+
+			<section>
+				<h3>broadcasting all the links now!</h3>
+				<h4 class="fragment fade-up">but if you prefer QRcode or a tinyURL</h4>
+			</section>
 			<section data-background-iframe="http://localhost:8888">
 			</section>
 
 			<section>
-				<h2>Thanks!</h2>
+				<h2>thanks!</h2>
 				<h2>😘</h2>
 			</section>
 
@@ -106,7 +272,8 @@
 		// More info https://github.com/hakimel/reveal.js#configuration
 		Reveal.initialize({
 			history: true,
-
+			controls: false,
+			autoPlayMedia: false,
 			// More info https://github.com/hakimel/reveal.js#dependencies
 			dependencies: [{
 					src: 'plugin/markdown/marked.js'
